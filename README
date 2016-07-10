@@ -46,3 +46,8 @@ BowerPkgDemo#0.0.1 js\lib\BowerPkgDemo
 5. Now that we have Successfully Published our bower Package by creating and consuming the package
 	* to maintian it 
 	let say I Add string "Anand Kumar"
+
+now we have to tag it to let bower know that there is new version of out project
+
+	before tagging lets update version in bower.json 
+	
