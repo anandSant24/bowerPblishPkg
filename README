@@ -50,4 +50,43 @@ BowerPkgDemo#0.0.1 js\lib\BowerPkgDemo
 now we have to tag it to let bower know that there is new version of out project
 
 	before tagging lets update version in bower.json 
-	
+
+		$git tag 0.0.2
+	Total 0 (delta 0), reused 0 (delta 0)
+	To https://github.com/anandSant24/bowerPblishPkg.git
+ 	* [new tag]         0.0.2 -> 0.0.2
+
+now do 
+$ bower info BowerPkgDemo
+	Available versions:
+	  - 0.0.2
+	  - 0.0.1
+
+7. now that we have updated our package version but our client has not received the updated version
+
+do 
+$path>>bower list
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower check-new     Checking for new versions of the project dependencies...
+BowerPkgDemo#0.0.2 $path>
+└── BowerPkgDemo#0.0.1 extraneous (latest is 0.0.2)
+
+Observe that bower version is BowerPkgDemo#0.0.1
+ but now there is version 0.0.2 is available to update it do update
+ bower update and refresh it(to be availble to validte you have to run it on server)
+
+ Final Quiz
+ Q1. How do you create new version of bower package
+ A. create a new Tag
+ Q2. which command will push tag to github
+ A. git push --tags
+Q3.what value do you need to change in your bower.json when depolying a new version?
+A. version property
+
+
+
+
+
+
+
+
