@@ -1,6 +1,6 @@
 {
   "name": "BowerPkgDemo",
-  "version":"0.0.1",
+  "version": "0.0.1",
   "homepage": "https://github.com/anandSant24/bowerPkg",
   "authors": [
     "anandsant"
@@ -17,5 +17,15 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "22b9bfe7e9ca8eb529556562dd4c3ab81ccd7558"
+  },
+  "_source": "https://github.com/anandSant24/bowerPblishPkg.git",
+  "_target": "^0.0.1",
+  "_originalSource": "BowerPkgDemo",
+  "_direct": true
 }

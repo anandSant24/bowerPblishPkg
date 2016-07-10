@@ -1,0 +1,48 @@
+1. pushed the code changes to the repos
+
+bower works off of the tag, so tag your project with same version as 0.0.1
+and push again in repo by adding tags flag
+
+2. $ git tag 0.0.1
+
+3. $ git push --tags
+
+now go to github and see that there is one release has been created click on that it shows 0.0.1 has been created
+
+final step to create bower package is to register it
+bower register <name of pkg> <url>/<username>/<name of repo>
+
+Ex: 
+$ bower register BowerPkgDemo https://github.com/anandSant24/bowerPblishPkg.git
+bower resolve       https://github.com/anandSant24/bowerPblishPkg.git#*
+bower checkout      BowerPkgDemo#0.0.1
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower resolved      https://github.com/anandSant24/bowerPblishPkg.git#0.0.1
+? Registering a package will make it installable via the registry (https://bower? Registering a package will make it installable via the registry (https://bower.herokuapp.com), continue? Yes
+bower register      https://github.com/anandSant24/bowerPblishPkg.git
+
+Package BowerPkgDemo registered successfully!
+All valid semver tags on https://github.com/anandSant24/bowerPblishPkg.git will be available as versions.
+To publish a new version, just release a valid semver tag.
+
+Run bower info BowerPkgDemo to list the available versions.
+
+
+now to see bower info bowerPkgDemo
+4. Consume our package 
+	1. create index.html file
+	2. create .bowerrc file
+	3. now install your created package into this proj
+	$ bower install BowerPkgDemo
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower cached        https://github.com/anandSant24/bowerPblishPkg.git#0.0.1
+bower validate      0.0.1 against https://github.com/anandSant24/bowerPblishPkg.git#*
+bower install       BowerPkgDemo#0.0.1
+
+BowerPkgDemo#0.0.1 js\lib\BowerPkgDemo	
+
+	4. update .html file to include js/lib/simpleHelloApp.js file
+
+5. Now that we have Successfully Published our bower Package by creating and consuming the package
+	* to maintian it 
+	let say I Add string "Anand Kumar"
