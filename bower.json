@@ -1,0 +1,21 @@
+{
+  "name": "BowerPkgDemo",
+  "version":"0.0.1",
+  "homepage": "https://github.com/anandSant24/bowerPkg",
+  "authors": [
+    "anandsant"
+  ],
+  "description": "a simple application to rotate lib",
+  "main": "simpleHelloApp.js",
+  "keywords": [
+    "rotate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
